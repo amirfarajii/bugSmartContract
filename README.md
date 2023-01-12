@@ -1,14 +1,9 @@
-# Sample Hardhat Project
+# Attack to smart contract 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This bug is logic contract on bridge not initialized and anybody can initialize that and because on logic contract use delegatecall owner can use slefdestruct function
+therefor all funds lock on contract
 
-Try running some of the following tasks:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
-just need  run "npx hardhat test test/Attack.js"
+Run "npx hardhat test test/Attack.js"
+ ```
