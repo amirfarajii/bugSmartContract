@@ -5,5 +5,6 @@ therefor all funds lock on contract
 
 
 ```shell
+npm init and install package
 Run "npx hardhat test test/Attack.js"
  ```
