@@ -1,5 +1,5 @@
 const { expect } = require("chai");
-const { getContractAddress } = require("ethers/lib/utils");
+
 const { ethers } = require("hardhat");
 
 console.log(".............Destruct Contract.............")
@@ -73,10 +73,7 @@ it(" Selfdestruct Contract", async()=>{
     await CrossChainBridge_R1.connect(attacker).factoryPeggedBond(2, Metadata);
     const bytescode = await ethers.provider.getCode(CROSSCHAINBIDGE);
     expect(bytescode).to.equal("0x");
-    console.log("Bytescode of bridge constract is:",bytescode);
+    console.log("Bytescode of bridge contract is:",bytescode);
 })
 
-/*Hello Anker, My name is Amir, I have three years of work experience in the field of blockchain.
- am checking your project thoroughly and will let you know when I find any bugs in your program.
-github: https://github.com/amirfarajii
-email: amirhoseinfaraji784@gmail.com */
+
